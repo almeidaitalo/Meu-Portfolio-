@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Define a altura total da página */
+}
+
+body {
+  display: flex; /* Usa flexbox para o layout do body */
+  flex-direction: column; /* Coloca os filhos em coluna */
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header a {
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex; /* Usar flexbox para alinhar os botões lado a lado */
+  justify-content: center; /* Centraliza os botões no cabeçalho */
+  margin-top: 10px; /* Espaço acima dos botões */
+}
+
+.button {
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: white; /* Cor do texto */
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  text-decoration: none; /* Remove sublinhado */
+  border-radius: 5px; /* Cantos arredondados */
+  margin: 0 10px; /* Espaço entre os botões */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  flex: 1; /* Permite que o container ocupe o espaço restante */
+}
+
+.about {
+  padding: 20px;
+}
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.skills {
+  padding: 20px;
+  text-align: center; /* Centraliza o texto da seção de habilidades */
+}
+
+.skills-container {
+  display: flex; /* Usar flexbox para alinhar as habilidades lado a lado */
+  justify-content: center; /* Centraliza as habilidades */
+  flex-wrap: wrap; /* Permite que as habilidades se ajustem em múltiplas linhas, se necessário */
+}
+
+.skill {
+  margin: 17px; /* Espaço entre as habilidades */
+  text-align: center; /* Centraliza o texto dentro de cada habilidade */
+  display: flex; /* Alinha a imagem e o texto em linha */
+  align-items: center; /* Centraliza verticalmente os itens */
+}
+
+.skill-icon {
+  width: 80px; /* Tamanho do ícone */
+  height: 80px; /* Tamanho do ícone */
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.projects {
+  display: flex; /* Habilita flexbox */
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Centraliza os projetos horizontalmente */
+  padding: 20px;
+}
+
+.projects h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.project-item {
+  width: 60%; /* Define uma largura fixa menor para centralizar os itens */
+  margin-bottom: 30px;
+  text-align: center; /* Centraliza o texto dentro de cada projeto */
+}
+
+.project-item img {
+  width: 100%; /* A imagem ocupa toda a largura do contêiner */
+  border-radius: 20px;
+}
+
+.project-item p {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .project-gallery {
+    flex-direction: column; /* Alinha os projetos em uma coluna em telas menores */
+  }
+}
+
+
